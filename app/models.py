@@ -12,3 +12,10 @@ class Todo(Base):
     description = Column(String,nullable=True)
     completed = Column(Boolean,default=False)
     due_date = Column(Date, nullable=True)
+class User(Base):
+    __tablename__ = "user"
+    id = Column()
+    title = Column()
+    description = Column()
+    completed = Column()
+    due_date = Column()
