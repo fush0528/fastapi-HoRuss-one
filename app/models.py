@@ -14,8 +14,7 @@ class Todo(Base):
     due_date = Column(Date, nullable=True)
 class User(Base):
     __tablename__ = "user"
-    id = Column(123456)
-    title = Column(hehe)
-    description = Column()
-    completed = Column(True)
-    due_date = Column()
+    id = Column(Integer, primary_key=True,index=True)
+    username = Column(String(100),nullable=False)
+    password = Column(String(100),nullable=False)
+    email = Column(String(100),nullable=False)
